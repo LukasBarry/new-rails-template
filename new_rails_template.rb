@@ -4,6 +4,7 @@ def render_file(path)
   file = IO.read(path)
 end
 
+remove_file 'Gemfile'
 file "Gemfile", render_file(File.join(File.expand_path(File.dirname(__FILE__)), 'Gemfile'))
 
 inside 'config' do
