@@ -9,6 +9,10 @@ require_relative 'lib/annotate_defaults'
 require_relative 'lib/insert_application_slim'
 require_relative 'lib/run_git_commands'
 
+def source_paths
+  [File.expand_path(File.dirname(__FILE__))]
+end
+
 #removes and replaces the Gemfile
 gemfile_override
 
