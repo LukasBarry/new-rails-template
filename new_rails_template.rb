@@ -8,6 +8,7 @@ require_relative 'lib/run_generate'
 require_relative 'lib/annotate_defaults'
 require_relative 'lib/insert_application_slim'
 require_relative 'lib/run_git_commands'
+require_relative 'lib/insert_code_climate'
 
 def source_paths
   [File.expand_path(File.dirname(__FILE__))]
@@ -33,6 +34,9 @@ remove_require_tree_and_self
 after_bundle do
   #installation for all gems that require it
   generate_all_gems
+
+  #adds codeclimate requirements to spec_helper.rb
+  code_climate
 
   #replaces the annotate file with my preferred defaults
   set_annotate_defaults
