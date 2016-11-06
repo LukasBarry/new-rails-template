@@ -9,7 +9,9 @@ require_relative 'lib/annotate_defaults'
 require_relative 'lib/insert_application_slim'
 require_relative 'lib/run_git_commands'
 require_relative 'lib/insert_code_climate'
+require_relative 'lib/devise_setup'
 
+#sets the correct file path for the Gemfile
 def source_paths
   [File.expand_path(File.dirname(__FILE__))]
 end
@@ -37,6 +39,9 @@ after_bundle do
 
   #adds codeclimate requirements to spec_helper.rb
   code_climate
+
+  #insert devise controller parameters in application controller
+  devise_controller_setup
 
   #replaces the annotate file with my preferred defaults
   set_annotate_defaults

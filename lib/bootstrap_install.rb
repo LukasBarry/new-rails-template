@@ -1,4 +1,3 @@
-
 def rename_stylesheet
   inside 'app/assets/stylesheets' do
     File.rename("application.css", "application.scss")
