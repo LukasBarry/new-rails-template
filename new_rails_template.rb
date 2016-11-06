@@ -1,6 +1,8 @@
 # # Template for new Rails projects
 # # new_rails_template.rb
 require_relative 'lib/gemfile_config'
+require_relative 'lib/readme_config'
+require_relative 'lib/readme_config'
 require_relative 'lib/database_config'
 require_relative 'lib/remove_minitest'
 require_relative 'lib/bootstrap_install'
@@ -18,6 +20,9 @@ end
 
 #removes and replaces the Gemfile
 gemfile_override
+
+#removes and replaces the README
+readme_override
 
 #removes sqlite3 database.yml file and replaces it for postgresql
 database_configuration
