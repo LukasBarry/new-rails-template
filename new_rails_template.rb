@@ -45,6 +45,9 @@ after_bundle do
   #adds codeclimate requirements to spec_helper.rb
   code_climate
 
+  #adds setup for Travis CI
+  travis_setup
+
   #insert devise controller parameters in application controller
   devise_controller_setup
 
