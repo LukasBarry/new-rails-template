@@ -32,4 +32,4 @@ I created this template to work for every new Rails project I could possibly nee
   rake db:migrate
 ```
 
-5. Happy coding!
+Happy coding!
