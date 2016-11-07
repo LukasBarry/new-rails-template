@@ -74,10 +74,8 @@ TRAVIS CI
 
 * get your repo-token from Travis and place it in the travis.yml file
 
-* run
-```
-  bundle exec rspec
-  bundle exec codeclimate-test-reporter
+* run ``` bundle exec rspec
+          bundle exec codeclimate-test-reporter
 ```
   and your testing environment is good to go!
 
