@@ -29,7 +29,7 @@ I created this template to work for every new Rails project I could possibly nee
 4. Once the template is finished running, you will need to create the database and migrate:
 ```
 rake db:create
-db:migrate
+rake db:migrate
 ```
 
 #### Usage
@@ -75,7 +75,7 @@ To user CodeClimate and Travis CI in your projects, follow these steps:
 * get your repo-token from [Travis](https://travis-ci.org/) and place it in the travis.yml file
 
 * run
-* ```
+```
 bundle exec rspec
 bundle exec codeclimate-test-reporter
 ```
