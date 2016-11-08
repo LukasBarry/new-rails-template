@@ -28,17 +28,17 @@ I created this template to work for every new Rails project I could possibly nee
 
 4. Once the template is finished running, you will need to create the database and migrate:
 ```
-  rake db:create
-  rake db:migrate
+rake db:create
+db:migrate
 ```
 
 #### Usage
 
 To user CodeClimate and Travis CI in your projects, follow these steps:
 
-CODECLIMATE
+###### CODECLIMATE
 
-* Make sure you have an account on CodeClimate.com
+* Make sure you have an account on [CodeClimate](codeclimate.com)
 
 * Go to CodeClimate dashboard and click 'Add Open Source Repo'
 
@@ -56,7 +56,7 @@ CODECLIMATE
 
 * Go to your GutHub page and go to Settings > Webhooks & Services
 
-* Add CodeClimate Webhook (https://codeclimate.com/webhooks)
+* Add CodeClimate Webhook - (https://codeclimate.com/webhooks)
 
 * select 'Send me everything'
 
@@ -66,18 +66,18 @@ CODECLIMATE
 
 * Click save and then click 'Test Services' to make sure it is working
 
-TRAVIS CI
+###### TRAVIS CI
 
 * From CodeClimate dashboard, hover over project and select settings
 
 * click on 'Test Coverage' on right hand side
 
-* get your repo-token from Travis and place it in the travis.yml file
+* get your repo-token from [Travis](https://travis-ci.org/) and place it in the travis.yml file
 
 * run
-```
-      bundle exec rspec
-      bundle exec codeclimate-test-reporter
+* ```
+bundle exec rspec
+bundle exec codeclimate-test-reporter
 ```
   and your testing environment is good to go!
 
