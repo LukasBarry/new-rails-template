@@ -42,7 +42,7 @@ end
 group :test do
   gem 'capybara'
   gem 'simplecov'
-  gem "codeclimate-test-reporter"
+  gem 'codeclimate-test-reporter'
   gem 'shoulda'
   gem 'rails-controller-testing'
 end
